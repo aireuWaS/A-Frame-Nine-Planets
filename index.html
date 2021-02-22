@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <title>Lil Planets</title>
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-assets>
+        <!--Mercury Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="mercury" src="assets/mercury.jpg">
+        <!--Venus Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="venus" src="assets/venus.jpg">
+        <!--Mars Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="mars" src="assets/mars.jpg">
+        <!--Earth Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="earth" src="assets/eartj.jpg">
+        <!--Jupiter Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="jupiter" src="assets/jupiter.jpg">
+        <!--Saturn Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="saturn" src="assets/saturn.jpg">
+        <!--Saturn Ring Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="ring" src="assets/ring.png">
+        <!--Uranus Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="uranus" src="assets/uranus.jpg">
+        <!--Neptune Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="neptune" src="assets/neptune.jpg">
+        <!--Sun Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="sun" src="assets/sun.jpg">
+        <!--Moon Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="moon" src="assets/moon.jpg">
+        <!--Saturn Ring Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="saturn" src="assets/saturn.jpg">
+        <!--Pluto Texture Credit: http://planetpixelemporium.com/pluto.html-->
+        <img id="pluto" src="assets/pluto.jpg">
+        <!--Star Texture Credit: https://www.solarsystemscope.com/textures/-->
+        <img id="sky" src="assets/stars.jpg">
+    </a-assets>
+
+    <a-sky src="#sky"></a-sky>
+    <a-entity position="0 20 100" rotation="0 0 0">
+      <a-camera active="true"></a-camera>
+    </a-entity>
+    <a-sphere src="#sun" position="0 4 -30" radius="13.927" animation="property:rotation;to: 0 360 0;loop:true;dur:81000;easing: linear;"></a-sphere>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:723;easing:linear;">
+    <a-sphere src="#mercury" radius="0.4878" position="0 0 -28.95" animation="property:rotation;to: 0 360 0;loop:true;dur:177000;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:2535;easing:linear;">
+    <a-sphere src="#venus" radius="1.2104" position="0 0 -54.08" animation="property:rotation;to: 0 360 0;loop:true;dur:729000;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:3000;easing:linear;">
+    <a-sphere src="#earth" radius="1.2756" position="0 0 -74.8" animation="property:rotation;to: 0 360 0;loop:true;dur:3000;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:5646;easing:linear;">
+    <a-sphere src="#mars" radius=".6794" position="0 0 -113.96832" animation="property:rotation;to: 0 360 0;loop:true;dur:3060;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:35580;easing:linear;">
+    <a-sphere src="#jupiter" radius="7.1492" position="0 0 -129" animation="property:rotation;to: 0 360 0;loop:true;dur:1251;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:87000;easing:linear;">
+    <a-sphere src="#saturn" radius="6.0268" position="0 0 -153" animation="property:rotation;to: 0 360 0;loop:true;dur:1332;easing: linear;">
+    <a-circle radius=20 src="#ring" rotation="-90 0 0" side=double></a-circle>
+    </a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:252000;easing:linear;">
+    <a-sphere src="#uranus" radius="3.194975" position="0 0 -239" animation="property:rotation;to: 0 360 0;loop:true;dur:2157;easing: linear;"></a-sphere></a-entity>
+
+    <a-entity position="0 4 -30" animation="property:rotation;to:0 360 0;loop:true;dur:744000;easing:linear;">
+    <a-sphere src="#pluto" radius=".237" position="0 0 -260" animation="property:rotation;to: 0 360 0;loop:true;dur:19125;easing: linear;"></a-sphere></a-entity>
+  
+  </a-scene>
+ </body>
+</html>
+
